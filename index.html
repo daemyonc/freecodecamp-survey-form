@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="main.css">
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" defer></script>
+  <title>Snack Time Survey</title>
+</head>
+<body>
+  <h1 id="title">Snack Time Survey</h1>
+    <div id="form">
+      <p id="description">A brief survey about your personal snack time habits</p>
+      <form id="survey-form">
+        <div class="row">
+          <div class="leftCol">
+            <label id="name-label" for="name">Name</label>
+          </div>
+          <div class="rightCol">
+            <input id="name" type="text" placeholder="Tell us your name" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="leftCol">
+            <label id="email-label" for="email">*Email</label>
+          </div>
+          <div class="rightCol">
+            <input type="email" name="email" id="email" class="input-field" placeholder="Enter your Email" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="leftCol">
+            <label id="number-label" for="number">Average # of Snacks</label>
+          </div>
+          <div class="rightCol">
+            <input type="number" name="age" id="number" min="13" max="125" class="input-field" placeholder="Avg # of snacks per week" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="leftCol">
+            <label id="snack-type-label" for="snack-type">Favorite Type of Snack</label>
+          </div>
+          <div class="rightCol">
+            <select id="dropdown" name="snack-type">
+              <option value="Fruit">Fruits</option>
+              <option value="Nuts">Nuts</option>
+              <option value="Sweets">Sweets</option>
+              <option value="Kale">Kale</option>
+              <option value="Chips">Chips</option>
+              <option value="More meat">More meat</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="leftCol">
+            <label id="snacker-level-label" for="snacker-level">How would you describe your snacking level?</label>
+          </div>
+          <div class="rightCol">
+            <ul>
+              <li class="radio"><label>What are snack?<input name="radio-buttons" value="0"  type="radio" class="snacker-level" ></label></li>
+              <li class="radio"><label>Sure<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+              <li class="radio"><label>All your snacks are belong to us<input name="radio-buttons" value="11"  type="radio" class="userRatings" ></label></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="leftCol">
+            <label id="time-of-day-label">What are your preferred time(s) to snack?Select all that apply</label>
+          </div>
+          <div class="rightCol">
+            <ul>
+              <li class="checkbox"><label><input id="checkbox" name="checkbox" type="checkbox" value="0"  class="time-of-day" >Second Breakfast</label></li>
+              <li class="checkbox"><label><input id="checkbox" name="checkbox" type="checkbox" value="1"  class="time-of-day" >Elevenses</label></li>
+              <li class="checkbox"><label><input id="checkbox" name="checkbox" type="checkbox" value="2"  class="time-of-day" >Post Lunch</label></li>
+              <li class="checkbox"><label><input id="checkbox" name="checkbox" type="checkbox" value="3" class="time-of-day">Afternoon Tea</label></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="leftCol">
+            <label id="time-of-day-label" for="comments">Feed me anything we left out. I'm hungry.</label>
+          </div>
+          <div class="rightCol">
+            <textarea id="comments" class="input-field" name="comment" placeholder="Feed me...">
+            </textarea>
+          </div>
+        </div>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+      
+    </div>
+    <div id="footer"></div>
+</body>
+</html>
